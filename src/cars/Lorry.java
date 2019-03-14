@@ -1,3 +1,5 @@
+package cars;
+
 class Lorry extends Car {
 
     public Lorry(IEngine engine, String color, String name) {
@@ -6,16 +8,16 @@ class Lorry extends Car {
 
     @Override
     void open() {
-        System.out.println("Lorry cabin has opened");
+        System.out.println("cars.Lorry cabin has opened");
     }
 
     @Override
     public void move() {
-        System.out.println("Lorry is moving");
+        System.out.println("cars.Lorry is moving");
     }
 
     @Override
     public void stop() {
-        System.out.println("Lorry is stop");
+        System.out.println("cars.Lorry is stop");
     }
 }

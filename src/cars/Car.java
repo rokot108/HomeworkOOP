@@ -1,4 +1,6 @@
-abstract class Car implements Moveable {
+package cars;
+
+public abstract class Car implements Moveable {
     private IEngine engine;
     private String color;
     private String name;
@@ -10,8 +12,8 @@ abstract class Car implements Moveable {
         this.name = name;
     }
 
-    protected void start() {
-        System.out.println("Car starting");
+    public void start() {
+        System.out.println("cars.Car starting");
         if (!engine.isActive()) {
             engine.startStop();
         }

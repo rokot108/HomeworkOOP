@@ -1,3 +1,5 @@
+package cars;
+
 public class TransportFactory {
 
     static public Car getTransport(IEngine engine, String color, String name, boolean isHeavy) {

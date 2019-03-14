@@ -1,3 +1,5 @@
+package cars;
+
 class LightWeightCar extends Car {
 
     public LightWeightCar(IEngine engine, String color, String name) {
@@ -6,7 +8,7 @@ class LightWeightCar extends Car {
 
     @Override
     void open() {
-        System.out.println("Car is open");
+        System.out.println("cars.Car is open");
     }
 
     @Override
