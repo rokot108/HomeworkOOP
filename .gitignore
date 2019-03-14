@@ -1,0 +1,7 @@
+\.idea
+
+\.gitattributes
+\*.iml
+\target
+\.mvn
+\mvnw*
