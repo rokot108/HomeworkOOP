@@ -1,20 +1,29 @@
-abstract class Car{
-    public Engine engine;
+abstract class Car implements Moveable {
+    private IEngine engine;
     private String color;
     private String name;
 
 
-    protected void start(){
+    public Car(IEngine engine, String color, String name) {
+        this.engine = engine;
+        this.color = color;
+        this.name = name;
+    }
+
+    protected void start() {
         System.out.println("Car starting");
+        if (!engine.isActive()) {
+            engine.startStop();
+        }
     }
 
     abstract void open();
 
-    public Engine getEngine() {
+    public IEngine getEngine() {
         return engine;
     }
 
-    public void setEngine(Engine engine) {
+    public void setEngine(IEngine engine) {
         this.engine = engine;
     }
 

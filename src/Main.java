@@ -1,6 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        Car lightCar = TransportFactory.getTransport(new GasEngine(),"white","Mercedes",false);
+
+        lightCar.start();
+        lightCar.move();
     }
 }

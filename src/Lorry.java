@@ -1,10 +1,21 @@
-class Lorry extends Car, Moveable, Stopable{
+class Lorry extends Car {
 
-    public void move(){
-        System.out.println("Car is moving");
+    public Lorry(IEngine engine, String color, String name) {
+        super(engine, color, name);
     }
 
-    public void stop(){
-        System.out.println("Car is stop");
+    @Override
+    void open() {
+        System.out.println("Lorry cabin has opened");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Lorry is moving");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Lorry is stop");
     }
 }

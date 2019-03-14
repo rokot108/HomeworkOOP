@@ -1,4 +1,8 @@
-class LightWeightCar extends Car implements Moveable{
+class LightWeightCar extends Car {
+
+    public LightWeightCar(IEngine engine, String color, String name) {
+        super(engine, color, name);
+    }
 
     @Override
     void open() {
@@ -7,7 +11,12 @@ class LightWeightCar extends Car implements Moveable{
 
     @Override
     public void move() {
-        System.out.println("Car is moving");
+        System.out.println("Light car is moving");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Light car  is stop");
     }
 
 }

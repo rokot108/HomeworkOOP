@@ -1,3 +1,6 @@
-interface Moveable{
+interface Moveable {
+
     void move();
+
+    void stop();
 }

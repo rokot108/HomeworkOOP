@@ -1,3 +1,0 @@
-interface Stopable{
-    void stop();
-}
